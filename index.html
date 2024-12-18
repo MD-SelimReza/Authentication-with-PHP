@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://localhost/Authentication/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 255, 0.1);
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+        }
+        input {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+</head>
+
+<body cz-shortcut-listen="true">
+
+    <h1>Authentication System Using PHP &amp; MySQL</h1>
+
+    <h1 style="text-align:center; margin-top: 20px; color:blue;">
+            </h1>
+
+    
+    <div class="container">
+        <h1 style="text-align:center;">Welcome To Signup</h1>
+        
+        <form action="http://localhost/Authentication/includes/signup.php" method="POST">
+            <input type="text" name="username" placeholder="Username"><input type="email" name="email" placeholder="Email"><input type="password" name="password" placeholder="Password">
+            <button type="submit" name="submit">Signup</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <form action="http://localhost/Authentication/includes/logout.php" method="POST">
+            <h1 style="text-align:center;">Logout</h1>
+
+            <button>Signout</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h1 style="text-align:center;">Signin To Continue</h1>
+
+        <form action="http://localhost/Authentication/includes/signin.php" method="POST">
+            <input type="text" name="username" placeholder="Username"><input type="password" name="password" placeholder="Password">
+            <button>Signin</button>
+        </form>
+    </div>
+
+
+
+
+</body></html>
